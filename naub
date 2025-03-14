@@ -1,0 +1,2506 @@
+local Players = game:GetService("Players")
+local StarterGui = game:GetService("StarterGui")
+local LocalPlayer = Players.LocalPlayer
+
+local ScreenGui = Instance.new("ScreenGui")
+local swagUI = Instance.new("Frame")
+local tabContents = Instance.new("Frame")
+local logoLabel = Instance.new("TextLabel")
+local MovementTab = Instance.new("TextButton")
+local MainTab = Instance.new("TextButton")
+local MiscExtra = Instance.new("TextButton")
+local visTab = Instance.new("TextButton")
+local Frame = Instance.new("Frame")
+local MovementContents = Instance.new("Frame")
+local unlockAnimBtn = Instance.new("Frame")
+local toggleUnlocker = Instance.new("TextButton")
+local unlockToggledOn = Instance.new("Frame")
+local unlockToggledOff = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local toggleSpeedBtn = Instance.new("Frame")
+local toggleSpeed = Instance.new("TextButton")
+local speedToggledOn = Instance.new("Frame")
+local speedToggledOff = Instance.new("Frame")
+local speedAmnt = Instance.new("TextBox")
+local TextLabel_2 = Instance.new("TextLabel")
+local toggleJumpBtn = Instance.new("Frame")
+local toggleJump = Instance.new("TextButton")
+local jumpToggledOn = Instance.new("Frame")
+local jumpToggledOff = Instance.new("Frame")
+local jumpAmnt = Instance.new("TextBox")
+local TextLabel_3 = Instance.new("TextLabel")
+local togglyflyBtm = Instance.new("Frame")
+local toggleFly = Instance.new("TextButton")
+local flyToggledOn = Instance.new("Frame")
+local flyToggledOff = Instance.new("Frame")
+local flyAmnt = Instance.new("TextBox")
+local TextLabel_4 = Instance.new("TextLabel")
+local keybindButton1 = Instance.new("TextButton")
+local togglecSpeedBtn = Instance.new("Frame")
+local toggleCspeed = Instance.new("TextButton")
+local cSpeedToggledOff = Instance.new("Frame")
+local cSpeedToggledOn = Instance.new("Frame")
+local cspeedAmnt = Instance.new("TextBox")
+local TextLabel_5 = Instance.new("TextLabel")
+local keybindButton3 = Instance.new("TextButton")
+local mainContent = Instance.new("Frame")
+local toggleHitBoxBtn = Instance.new("Frame")
+local toggleHit = Instance.new("TextButton")
+local hitbxToggledOn = Instance.new("Frame")
+local hitbxToggledOff = Instance.new("Frame")
+local TextLabel_6 = Instance.new("TextLabel")
+local hitboxSize = Instance.new("TextBox")
+local hitBoxTrns = Instance.new("TextBox")
+local hitPartDropDown = Instance.new("Frame")
+local hitOptions = Instance.new("Frame")
+local headPartButton = Instance.new("TextButton")
+local rootPartButton = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+local toggleAimBtn = Instance.new("Frame")
+local toggleAim = Instance.new("TextButton")
+local aimToggledOn = Instance.new("Frame")
+local aimToggledOff = Instance.new("Frame")
+local TextLabel_7 = Instance.new("TextLabel")
+local aimSmoothing = Instance.new("TextBox")
+local keybindButton2 = Instance.new("TextButton")
+local aimPartDropDown = Instance.new("Frame")
+local aimOptions = Instance.new("Frame")
+local headPartButton_2 = Instance.new("TextButton")
+local rootPartButton_2 = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local miscContent = Instance.new("Frame")
+local toggleAnimsBtn = Instance.new("Frame")
+local toggleZombieAnim = Instance.new("TextButton")
+local anToggledOn = Instance.new("Frame")
+local anToggledOff = Instance.new("Frame")
+local TextLabel_8 = Instance.new("TextLabel")
+local visContent = Instance.new("Frame")
+local toggleWaterMark = Instance.new("Frame")
+local togglemark = Instance.new("TextButton")
+local markToggledOn = Instance.new("Frame")
+local markToggledOff = Instance.new("Frame")
+local TextLabel_9 = Instance.new("TextLabel")
+local toggleESP = Instance.new("Frame")
+local toggleESP_2 = Instance.new("TextButton")
+local espToggledOn = Instance.new("Frame")
+local espToggledOff = Instance.new("Frame")
+local TextLabel_10 = Instance.new("TextLabel")
+local toggleGunChams = Instance.new("Frame")
+local toggleg_Chams = Instance.new("TextButton")
+local g_ChamsToggledOn = Instance.new("Frame")
+local g_ChamsToggledOff = Instance.new("Frame")
+local TextLabel_11 = Instance.new("TextLabel")
+local WaterMark = Instance.new("Frame")
+local line = Instance.new("Frame")
+local TextLabel_12 = Instance.new("TextLabel")
+local Loader = Instance.new("Frame")
+local UIGradient = Instance.new("UIGradient")
+local Frame_2 = Instance.new("Frame")
+local Frame_3 = Instance.new("Frame")
+
+--Properties:
+
+ScreenGui.Parent = LocalPlayer:FindFirstChildOfClass("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+swagUI.Name = "swagUI"
+swagUI.Parent = ScreenGui
+swagUI.BackgroundColor3 = Color3.fromRGB(12, 12, 12)
+swagUI.BorderColor3 = Color3.fromRGB(0, 0, 0)
+swagUI.BorderSizePixel = 0
+swagUI.Position = UDim2.new(0.0187896155, 0, 0.087064676, 0)
+swagUI.Size = UDim2.new(0, 368, 0, 510)
+
+tabContents.Name = "tabContents"
+tabContents.Parent = swagUI
+tabContents.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+tabContents.BorderColor3 = Color3.fromRGB(0, 0, 0)
+tabContents.BorderSizePixel = 0
+tabContents.Position = UDim2.new(0.0208443347, 0, 0.0118395714, 1)
+tabContents.Size = UDim2.new(0, 352, 0, 22)
+
+logoLabel.Name = "logoLabel"
+logoLabel.Parent = tabContents
+logoLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+logoLabel.BackgroundTransparency = 1.000
+logoLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+logoLabel.BorderSizePixel = 0
+logoLabel.Position = UDim2.new(0.0191026609, 0, 0.197614491, 0)
+logoLabel.Size = UDim2.new(0, 87, 0, 13)
+logoLabel.Font = Enum.Font.RobotoMono
+logoLabel.Text = "swag v1.18"
+logoLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+logoLabel.TextSize = 18.000
+
+MovementTab.Name = "MovementTab"
+MovementTab.Parent = tabContents
+MovementTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MovementTab.BackgroundTransparency = 1.000
+MovementTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MovementTab.BorderSizePixel = 0
+MovementTab.Position = UDim2.new(0.579839349, 0, 0.0454545468, 0)
+MovementTab.Size = UDim2.new(0, 65, 0, 20)
+MovementTab.Font = Enum.Font.RobotoMono
+MovementTab.Text = "Movement"
+MovementTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+MovementTab.TextSize = 14.000
+MovementTab.TextWrapped = true
+
+MainTab.Name = "MainTab"
+MainTab.Parent = tabContents
+MainTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainTab.BackgroundTransparency = 1.000
+MainTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainTab.BorderSizePixel = 0
+MainTab.Position = UDim2.new(0.264792353, 0, 0.0454545468, 0)
+MainTab.Size = UDim2.new(0, 57, 0, 20)
+MainTab.Font = Enum.Font.RobotoMono
+MainTab.Text = "Combat"
+MainTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+MainTab.TextSize = 14.000
+
+MiscExtra.Name = "MiscExtra"
+MiscExtra.Parent = tabContents
+MiscExtra.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MiscExtra.BackgroundTransparency = 1.000
+MiscExtra.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MiscExtra.BorderSizePixel = 0
+MiscExtra.Position = UDim2.new(0.769690573, 0, 0.0454545468, 0)
+MiscExtra.Size = UDim2.new(0, 73, 0, 20)
+MiscExtra.Font = Enum.Font.RobotoMono
+MiscExtra.Text = "Misc/Extra"
+MiscExtra.TextColor3 = Color3.fromRGB(255, 255, 255)
+MiscExtra.TextSize = 14.000
+MiscExtra.TextWrapped = true
+
+visTab.Name = "visTab"
+visTab.Parent = tabContents
+visTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+visTab.BackgroundTransparency = 1.000
+visTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+visTab.BorderSizePixel = 0
+visTab.Position = UDim2.new(0.418201447, 0, 0.0454545468, 0)
+visTab.Size = UDim2.new(0, 57, 0, 20)
+visTab.Font = Enum.Font.RobotoMono
+visTab.Text = "Visuals"
+visTab.TextColor3 = Color3.fromRGB(255, 255, 255)
+visTab.TextSize = 14.000
+
+Frame.Parent = tabContents
+Frame.BackgroundColor3 = Color3.fromRGB(181, 189, 255)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(-4.33488339e-08, 0, 1, 0)
+Frame.Size = UDim2.new(0, 352, 0, 2)
+
+MovementContents.Name = "MovementContents"
+MovementContents.Parent = swagUI
+MovementContents.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+MovementContents.BorderColor3 = Color3.fromRGB(15, 15, 15)
+MovementContents.BorderSizePixel = 0
+MovementContents.Position = UDim2.new(0.0208443347, 0, 0.0792643204, 0)
+MovementContents.Size = UDim2.new(0, 352, 0, 458)
+MovementContents.Visible = false
+
+unlockAnimBtn.Name = "unlockAnimBtn"
+unlockAnimBtn.Parent = MovementContents
+unlockAnimBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+unlockAnimBtn.BackgroundTransparency = 1.000
+unlockAnimBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unlockAnimBtn.BorderSizePixel = 0
+unlockAnimBtn.Position = UDim2.new(0.0282131657, 0, 0.104325697, 0)
+unlockAnimBtn.Size = UDim2.new(0, 15, 0, 15)
+unlockAnimBtn.Visible = false
+
+toggleUnlocker.Name = "toggleUnlocker"
+toggleUnlocker.Parent = unlockAnimBtn
+toggleUnlocker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleUnlocker.BackgroundTransparency = 0.500
+toggleUnlocker.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleUnlocker.BorderSizePixel = 0
+toggleUnlocker.Size = UDim2.new(0, 15, 0, 15)
+toggleUnlocker.Font = Enum.Font.SourceSans
+toggleUnlocker.Text = ""
+toggleUnlocker.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleUnlocker.TextSize = 14.000
+
+unlockToggledOn.Name = "unlockToggledOn"
+unlockToggledOn.Parent = unlockAnimBtn
+unlockToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+unlockToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unlockToggledOn.BorderSizePixel = 0
+unlockToggledOn.Size = UDim2.new(0, 15, 0, 15)
+unlockToggledOn.Visible = false
+
+unlockToggledOff.Name = "unlockToggledOff"
+unlockToggledOff.Parent = unlockAnimBtn
+unlockToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+unlockToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+unlockToggledOff.BorderSizePixel = 0
+unlockToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel.Parent = unlockAnimBtn
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(5.0666666, 0, -0.0666666701, 0)
+TextLabel.Size = UDim2.new(0, 80, 0, 17)
+TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.Text = "Unlock animationPack"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 19.000
+
+toggleSpeedBtn.Name = "toggleSpeedBtn"
+toggleSpeedBtn.Parent = MovementContents
+toggleSpeedBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleSpeedBtn.BackgroundTransparency = 1.000
+toggleSpeedBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleSpeedBtn.BorderSizePixel = 0
+toggleSpeedBtn.Position = UDim2.new(0.0282131657, 0, 0.356234103, 0)
+toggleSpeedBtn.Size = UDim2.new(0, 15, 0, 15)
+toggleSpeedBtn.Visible = false
+
+toggleSpeed.Name = "toggleSpeed"
+toggleSpeed.Parent = toggleSpeedBtn
+toggleSpeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleSpeed.BackgroundTransparency = 0.500
+toggleSpeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleSpeed.BorderSizePixel = 0
+toggleSpeed.Size = UDim2.new(0, 15, 0, 15)
+toggleSpeed.Visible = false
+toggleSpeed.Font = Enum.Font.SourceSans
+toggleSpeed.Text = ""
+toggleSpeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleSpeed.TextSize = 14.000
+
+speedToggledOn.Name = "speedToggledOn"
+speedToggledOn.Parent = toggleSpeedBtn
+speedToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+speedToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedToggledOn.BorderSizePixel = 0
+speedToggledOn.Size = UDim2.new(0, 15, 0, 15)
+speedToggledOn.Visible = false
+
+speedToggledOff.Name = "speedToggledOff"
+speedToggledOff.Parent = toggleSpeedBtn
+speedToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+speedToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedToggledOff.BorderSizePixel = 0
+speedToggledOff.Size = UDim2.new(0, 15, 0, 15)
+speedToggledOff.Visible = false
+
+speedAmnt.Name = "speedAmnt"
+speedAmnt.Parent = toggleSpeedBtn
+speedAmnt.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+speedAmnt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+speedAmnt.BorderSizePixel = 0
+speedAmnt.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+speedAmnt.Size = UDim2.new(0, 103, 0, 20)
+speedAmnt.Visible = false
+speedAmnt.Font = Enum.Font.RobotoMono
+speedAmnt.PlaceholderText = "Amount"
+speedAmnt.Text = ""
+speedAmnt.TextColor3 = Color3.fromRGB(255, 255, 255)
+speedAmnt.TextSize = 15.000
+
+TextLabel_2.Parent = toggleSpeedBtn
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(3.79999995, 0, -0.0666666701, 0)
+TextLabel_2.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_2.Visible = false
+TextLabel_2.Font = Enum.Font.RobotoMono
+TextLabel_2.Text = "Walkspeed modifer"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 19.000
+
+toggleJumpBtn.Name = "toggleJumpBtn"
+toggleJumpBtn.Parent = MovementContents
+toggleJumpBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleJumpBtn.BackgroundTransparency = 1.000
+toggleJumpBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleJumpBtn.BorderSizePixel = 0
+toggleJumpBtn.Position = UDim2.new(0.0282131657, 0, 0.48854962, 0)
+toggleJumpBtn.Size = UDim2.new(0, 15, 0, 15)
+toggleJumpBtn.Visible = false
+
+toggleJump.Name = "toggleJump"
+toggleJump.Parent = toggleJumpBtn
+toggleJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleJump.BackgroundTransparency = 0.500
+toggleJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleJump.BorderSizePixel = 0
+toggleJump.Size = UDim2.new(0, 15, 0, 15)
+toggleJump.Visible = false
+toggleJump.Font = Enum.Font.SourceSans
+toggleJump.Text = ""
+toggleJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleJump.TextSize = 14.000
+
+jumpToggledOn.Name = "jumpToggledOn"
+jumpToggledOn.Parent = toggleJumpBtn
+jumpToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+jumpToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumpToggledOn.BorderSizePixel = 0
+jumpToggledOn.Size = UDim2.new(0, 15, 0, 15)
+jumpToggledOn.Visible = false
+
+jumpToggledOff.Name = "jumpToggledOff"
+jumpToggledOff.Parent = toggleJumpBtn
+jumpToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+jumpToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumpToggledOff.BorderSizePixel = 0
+jumpToggledOff.Size = UDim2.new(0, 15, 0, 15)
+jumpToggledOff.Visible = false
+
+jumpAmnt.Name = "jumpAmnt"
+jumpAmnt.Parent = toggleJumpBtn
+jumpAmnt.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+jumpAmnt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+jumpAmnt.BorderSizePixel = 0
+jumpAmnt.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+jumpAmnt.Size = UDim2.new(0, 103, 0, 20)
+jumpAmnt.Visible = false
+jumpAmnt.Font = Enum.Font.RobotoMono
+jumpAmnt.PlaceholderText = "Amount"
+jumpAmnt.Text = ""
+jumpAmnt.TextColor3 = Color3.fromRGB(255, 255, 255)
+jumpAmnt.TextSize = 15.000
+
+TextLabel_3.Parent = toggleJumpBtn
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(4.26666689, 0, -0.0666666701, 0)
+TextLabel_3.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_3.Visible = false
+TextLabel_3.Font = Enum.Font.RobotoMono
+TextLabel_3.Text = "JumpHeight modifer"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 19.000
+
+togglyflyBtm.Name = "togglyflyBtm"
+togglyflyBtm.Parent = MovementContents
+togglyflyBtm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+togglyflyBtm.BackgroundTransparency = 1.000
+togglyflyBtm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+togglyflyBtm.BorderSizePixel = 0
+togglyflyBtm.Position = UDim2.new(0.0282131657, 0, 0.0330788791, 0)
+togglyflyBtm.Size = UDim2.new(0, 15, 0, 15)
+
+toggleFly.Name = "toggleFly"
+toggleFly.Parent = togglyflyBtm
+toggleFly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleFly.BackgroundTransparency = 0.500
+toggleFly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleFly.BorderSizePixel = 0
+toggleFly.Size = UDim2.new(0, 15, 0, 15)
+toggleFly.Font = Enum.Font.SourceSans
+toggleFly.Text = ""
+toggleFly.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleFly.TextSize = 14.000
+
+flyToggledOn.Name = "flyToggledOn"
+flyToggledOn.Parent = togglyflyBtm
+flyToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+flyToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flyToggledOn.BorderSizePixel = 0
+flyToggledOn.Size = UDim2.new(0, 15, 0, 15)
+flyToggledOn.Visible = false
+
+flyToggledOff.Name = "flyToggledOff"
+flyToggledOff.Parent = togglyflyBtm
+flyToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+flyToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flyToggledOff.BorderSizePixel = 0
+flyToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+flyAmnt.Name = "flyAmnt"
+flyAmnt.Parent = togglyflyBtm
+flyAmnt.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+flyAmnt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+flyAmnt.BorderSizePixel = 0
+flyAmnt.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+flyAmnt.Size = UDim2.new(0, 103, 0, 20)
+flyAmnt.Font = Enum.Font.RobotoMono
+flyAmnt.PlaceholderText = "Amount"
+flyAmnt.Text = ""
+flyAmnt.TextColor3 = Color3.fromRGB(255, 255, 255)
+flyAmnt.TextSize = 15.000
+
+TextLabel_4.Parent = togglyflyBtm
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(2.5999999, 0, -0.0666666701, 0)
+TextLabel_4.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_4.Font = Enum.Font.RobotoMono
+TextLabel_4.Text = "Cframe flight"
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 19.000
+
+keybindButton1.Name = "keybindButton1"
+keybindButton1.Parent = togglyflyBtm
+keybindButton1.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+keybindButton1.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybindButton1.BorderSizePixel = 0
+keybindButton1.Position = UDim2.new(10, 0, 0.0666666701, 0)
+keybindButton1.Size = UDim2.new(0, 15, 0, 15)
+keybindButton1.Font = Enum.Font.RobotoMono
+keybindButton1.Text = "."
+keybindButton1.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybindButton1.TextSize = 14.000
+
+togglecSpeedBtn.Name = "togglecSpeedBtn"
+togglecSpeedBtn.Parent = MovementContents
+togglecSpeedBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+togglecSpeedBtn.BackgroundTransparency = 1.000
+togglecSpeedBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+togglecSpeedBtn.BorderSizePixel = 0
+togglecSpeedBtn.Position = UDim2.new(0.0282131657, 0, 0.178117052, 0)
+togglecSpeedBtn.Size = UDim2.new(0, 15, 0, 15)
+
+toggleCspeed.Name = "toggleCspeed"
+toggleCspeed.Parent = togglecSpeedBtn
+toggleCspeed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleCspeed.BackgroundTransparency = 0.500
+toggleCspeed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleCspeed.BorderSizePixel = 0
+toggleCspeed.Size = UDim2.new(0, 15, 0, 15)
+toggleCspeed.Font = Enum.Font.SourceSans
+toggleCspeed.Text = ""
+toggleCspeed.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleCspeed.TextSize = 14.000
+
+cSpeedToggledOff.Name = "cSpeedToggledOff"
+cSpeedToggledOff.Parent = togglecSpeedBtn
+cSpeedToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+cSpeedToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cSpeedToggledOff.BorderSizePixel = 0
+cSpeedToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+cSpeedToggledOn.Name = "cSpeedToggledOn"
+cSpeedToggledOn.Parent = togglecSpeedBtn
+cSpeedToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+cSpeedToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cSpeedToggledOn.BorderSizePixel = 0
+cSpeedToggledOn.Size = UDim2.new(0, 15, 0, 15)
+cSpeedToggledOn.Visible = false
+
+cspeedAmnt.Name = "cspeedAmnt"
+cspeedAmnt.Parent = togglecSpeedBtn
+cspeedAmnt.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+cspeedAmnt.BorderColor3 = Color3.fromRGB(0, 0, 0)
+cspeedAmnt.BorderSizePixel = 0
+cspeedAmnt.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+cspeedAmnt.Size = UDim2.new(0, 103, 0, 20)
+cspeedAmnt.Font = Enum.Font.RobotoMono
+cspeedAmnt.PlaceholderText = "Amount"
+cspeedAmnt.Text = ""
+cspeedAmnt.TextColor3 = Color3.fromRGB(255, 255, 255)
+cspeedAmnt.TextSize = 15.000
+
+TextLabel_5.Parent = togglecSpeedBtn
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(2.5999999, 0, -0.0666666701, 0)
+TextLabel_5.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_5.Font = Enum.Font.RobotoMono
+TextLabel_5.Text = "Cframe speed"
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 19.000
+
+keybindButton3.Name = "keybindButton3"
+keybindButton3.Parent = togglecSpeedBtn
+keybindButton3.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+keybindButton3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybindButton3.BorderSizePixel = 0
+keybindButton3.Position = UDim2.new(10, 0, 0.0666666701, 0)
+keybindButton3.Size = UDim2.new(0, 15, 0, 15)
+keybindButton3.Font = Enum.Font.RobotoMono
+keybindButton3.Text = "."
+keybindButton3.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybindButton3.TextSize = 14.000
+
+mainContent.Name = "mainContent"
+mainContent.Parent = swagUI
+mainContent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+mainContent.BorderColor3 = Color3.fromRGB(15, 15, 15)
+mainContent.BorderSizePixel = 0
+mainContent.Position = UDim2.new(0.0208443347, 0, 0.0792643204, 0)
+mainContent.Size = UDim2.new(0, 352, 0, 458)
+
+toggleHitBoxBtn.Name = "toggleHitBoxBtn"
+toggleHitBoxBtn.Parent = mainContent
+toggleHitBoxBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleHitBoxBtn.BackgroundTransparency = 1.000
+toggleHitBoxBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleHitBoxBtn.BorderSizePixel = 0
+toggleHitBoxBtn.Position = UDim2.new(0.0279192813, 0, 0.24690266, 0)
+toggleHitBoxBtn.Size = UDim2.new(0, 15, 0, 15)
+
+toggleHit.Name = "toggleHit"
+toggleHit.Parent = toggleHitBoxBtn
+toggleHit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleHit.BackgroundTransparency = 0.500
+toggleHit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleHit.BorderSizePixel = 0
+toggleHit.Size = UDim2.new(0, 15, 0, 15)
+toggleHit.Font = Enum.Font.SourceSans
+toggleHit.Text = ""
+toggleHit.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleHit.TextSize = 14.000
+
+hitbxToggledOn.Name = "hitbxToggledOn"
+hitbxToggledOn.Parent = toggleHitBoxBtn
+hitbxToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+hitbxToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitbxToggledOn.BorderSizePixel = 0
+hitbxToggledOn.Size = UDim2.new(0, 15, 0, 15)
+hitbxToggledOn.Visible = false
+
+hitbxToggledOff.Name = "hitbxToggledOff"
+hitbxToggledOff.Parent = toggleHitBoxBtn
+hitbxToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+hitbxToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitbxToggledOff.BorderSizePixel = 0
+hitbxToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel_6.Parent = toggleHitBoxBtn
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(3.5333333, 0, -0.0666666701, 0)
+TextLabel_6.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_6.Font = Enum.Font.RobotoMono
+TextLabel_6.Text = "Hitbox expander"
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 19.000
+
+hitboxSize.Name = "hitboxSize"
+hitboxSize.Parent = toggleHitBoxBtn
+hitboxSize.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+hitboxSize.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitboxSize.BorderSizePixel = 0
+hitboxSize.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+hitboxSize.Size = UDim2.new(0, 103, 0, 20)
+hitboxSize.Font = Enum.Font.RobotoMono
+hitboxSize.PlaceholderText = "Size"
+hitboxSize.Text = ""
+hitboxSize.TextColor3 = Color3.fromRGB(255, 255, 255)
+hitboxSize.TextSize = 15.000
+
+hitBoxTrns.Name = "hitBoxTrns"
+hitBoxTrns.Parent = toggleHitBoxBtn
+hitBoxTrns.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+hitBoxTrns.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitBoxTrns.BorderSizePixel = 0
+hitBoxTrns.Position = UDim2.new(-0.0384521484, 0, 3.49414873, 0)
+hitBoxTrns.Size = UDim2.new(0, 103, 0, 20)
+hitBoxTrns.Font = Enum.Font.RobotoMono
+hitBoxTrns.PlaceholderText = "Transparency"
+hitBoxTrns.Text = ""
+hitBoxTrns.TextColor3 = Color3.fromRGB(255, 255, 255)
+hitBoxTrns.TextSize = 15.000
+
+hitPartDropDown.Name = "hitPartDropDown"
+hitPartDropDown.Parent = mainContent
+hitPartDropDown.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+hitPartDropDown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitPartDropDown.BorderSizePixel = 0
+hitPartDropDown.Position = UDim2.new(0.0255681388, 0, 0.432820022, 0)
+hitPartDropDown.Size = UDim2.new(0, 103, 0, 20)
+hitPartDropDown.Visible = false
+
+hitOptions.Name = "hitOptions"
+hitOptions.Parent = hitPartDropDown
+hitOptions.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+hitOptions.BorderColor3 = Color3.fromRGB(0, 0, 0)
+hitOptions.BorderSizePixel = 0
+hitOptions.Position = UDim2.new(0.00200882694, 0, 1, 0)
+hitOptions.Size = UDim2.new(0, 103, 0, 93)
+hitOptions.Visible = false
+
+headPartButton.Name = "headPartButton"
+headPartButton.Parent = hitOptions
+headPartButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+headPartButton.BackgroundTransparency = 1.000
+headPartButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+headPartButton.BorderSizePixel = 0
+headPartButton.Size = UDim2.new(0, 102, 0, 20)
+headPartButton.Font = Enum.Font.RobotoMono
+headPartButton.Text = "Head"
+headPartButton.TextColor3 = Color3.fromRGB(178, 178, 178)
+headPartButton.TextSize = 14.000
+
+rootPartButton.Name = "rootPartButton"
+rootPartButton.Parent = hitOptions
+rootPartButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rootPartButton.BackgroundTransparency = 1.000
+rootPartButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rootPartButton.BorderSizePixel = 0
+rootPartButton.Position = UDim2.new(0, 0, 0.215053767, 0)
+rootPartButton.Size = UDim2.new(0, 102, 0, 20)
+rootPartButton.Font = Enum.Font.RobotoMono
+rootPartButton.Text = "RootPart"
+rootPartButton.TextColor3 = Color3.fromRGB(178, 178, 178)
+rootPartButton.TextSize = 14.000
+
+TextButton.Parent = hitPartDropDown
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 1.000
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.00200000009, 0, 0, 0)
+TextButton.Size = UDim2.new(0, 102, 0, 20)
+TextButton.Font = Enum.Font.RobotoMono
+TextButton.Text = "Head"
+TextButton.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextButton.TextSize = 15.000
+
+toggleAimBtn.Name = "toggleAimBtn"
+toggleAimBtn.Parent = mainContent
+toggleAimBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleAimBtn.BackgroundTransparency = 1.000
+toggleAimBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleAimBtn.BorderSizePixel = 0
+toggleAimBtn.Position = UDim2.new(0.0282131657, 0, 0.0279898215, 0)
+toggleAimBtn.Size = UDim2.new(0, 15, 0, 15)
+
+toggleAim.Name = "toggleAim"
+toggleAim.Parent = toggleAimBtn
+toggleAim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleAim.BackgroundTransparency = 0.500
+toggleAim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleAim.BorderSizePixel = 0
+toggleAim.Size = UDim2.new(0, 15, 0, 15)
+toggleAim.Font = Enum.Font.SourceSans
+toggleAim.Text = ""
+toggleAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleAim.TextSize = 14.000
+
+aimToggledOn.Name = "aimToggledOn"
+aimToggledOn.Parent = toggleAimBtn
+aimToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+aimToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimToggledOn.BorderSizePixel = 0
+aimToggledOn.Size = UDim2.new(0, 15, 0, 15)
+aimToggledOn.Visible = false
+
+aimToggledOff.Name = "aimToggledOff"
+aimToggledOff.Parent = toggleAimBtn
+aimToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+aimToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimToggledOff.BorderSizePixel = 0
+aimToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel_7.Parent = toggleAimBtn
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(1, 0, -0.0666666701, 0)
+TextLabel_7.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_7.Font = Enum.Font.RobotoMono
+TextLabel_7.Text = "Aimbot"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 19.000
+
+aimSmoothing.Name = "aimSmoothing"
+aimSmoothing.Parent = toggleAimBtn
+aimSmoothing.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+aimSmoothing.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimSmoothing.BorderSizePixel = 0
+aimSmoothing.Position = UDim2.new(-0.0384521484, 0, 1.69414771, 0)
+aimSmoothing.Size = UDim2.new(0, 103, 0, 20)
+aimSmoothing.Font = Enum.Font.RobotoMono
+aimSmoothing.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+aimSmoothing.PlaceholderText = "aim smoothing"
+aimSmoothing.Text = ""
+aimSmoothing.TextColor3 = Color3.fromRGB(255, 255, 255)
+aimSmoothing.TextSize = 15.000
+
+keybindButton2.Name = "keybindButton2"
+keybindButton2.Parent = toggleAimBtn
+keybindButton2.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+keybindButton2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+keybindButton2.BorderSizePixel = 0
+keybindButton2.Position = UDim2.new(6.33333349, 0, 0.0666666701, 0)
+keybindButton2.Size = UDim2.new(0, 15, 0, 15)
+keybindButton2.Font = Enum.Font.RobotoMono
+keybindButton2.Text = "."
+keybindButton2.TextColor3 = Color3.fromRGB(255, 255, 255)
+keybindButton2.TextSize = 14.000
+
+aimPartDropDown.Name = "aimPartDropDown"
+aimPartDropDown.Parent = mainContent
+aimPartDropDown.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+aimPartDropDown.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimPartDropDown.BorderSizePixel = 0
+aimPartDropDown.Position = UDim2.new(0.0255681388, 0, 0.155527443, 0)
+aimPartDropDown.Size = UDim2.new(0, 103, 0, 20)
+
+aimOptions.Name = "aimOptions"
+aimOptions.Parent = aimPartDropDown
+aimOptions.BackgroundColor3 = Color3.fromRGB(15, 15, 15)
+aimOptions.BorderColor3 = Color3.fromRGB(0, 0, 0)
+aimOptions.BorderSizePixel = 0
+aimOptions.Position = UDim2.new(0.00200882694, 0, 1, 0)
+aimOptions.Size = UDim2.new(0, 103, 0, 93)
+aimOptions.Visible = false
+
+headPartButton_2.Name = "headPartButton"
+headPartButton_2.Parent = aimOptions
+headPartButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+headPartButton_2.BackgroundTransparency = 1.000
+headPartButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+headPartButton_2.BorderSizePixel = 0
+headPartButton_2.Size = UDim2.new(0, 102, 0, 20)
+headPartButton_2.Font = Enum.Font.RobotoMono
+headPartButton_2.Text = "Head"
+headPartButton_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+headPartButton_2.TextSize = 14.000
+
+rootPartButton_2.Name = "rootPartButton"
+rootPartButton_2.Parent = aimOptions
+rootPartButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rootPartButton_2.BackgroundTransparency = 1.000
+rootPartButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+rootPartButton_2.BorderSizePixel = 0
+rootPartButton_2.Position = UDim2.new(0, 0, 0.215053767, 0)
+rootPartButton_2.Size = UDim2.new(0, 102, 0, 20)
+rootPartButton_2.Font = Enum.Font.RobotoMono
+rootPartButton_2.Text = "RootPart"
+rootPartButton_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+rootPartButton_2.TextSize = 14.000
+
+TextButton_2.Parent = aimPartDropDown
+TextButton_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.BackgroundTransparency = 1.000
+TextButton_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0.00200000009, 0, 0, 0)
+TextButton_2.Size = UDim2.new(0, 102, 0, 20)
+TextButton_2.Font = Enum.Font.RobotoMono
+TextButton_2.Text = "Head"
+TextButton_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+TextButton_2.TextSize = 15.000
+
+miscContent.Name = "miscContent"
+miscContent.Parent = swagUI
+miscContent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+miscContent.BorderColor3 = Color3.fromRGB(15, 15, 15)
+miscContent.BorderSizePixel = 0
+miscContent.Position = UDim2.new(0.0208443347, 0, 0.0792643204, 0)
+miscContent.Size = UDim2.new(0, 352, 0, 458)
+miscContent.Visible = false
+
+toggleAnimsBtn.Name = "toggleAnimsBtn"
+toggleAnimsBtn.Parent = miscContent
+toggleAnimsBtn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleAnimsBtn.BackgroundTransparency = 1.000
+toggleAnimsBtn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleAnimsBtn.BorderSizePixel = 0
+toggleAnimsBtn.Position = UDim2.new(0.0282131657, 0, 0.0279898215, 0)
+toggleAnimsBtn.Size = UDim2.new(0, 15, 0, 15)
+
+toggleZombieAnim.Name = "toggleZombieAnim"
+toggleZombieAnim.Parent = toggleAnimsBtn
+toggleZombieAnim.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleZombieAnim.BackgroundTransparency = 0.500
+toggleZombieAnim.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleZombieAnim.BorderSizePixel = 0
+toggleZombieAnim.Size = UDim2.new(0, 15, 0, 15)
+toggleZombieAnim.Font = Enum.Font.SourceSans
+toggleZombieAnim.Text = ""
+toggleZombieAnim.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleZombieAnim.TextSize = 14.000
+
+anToggledOn.Name = "anToggledOn"
+anToggledOn.Parent = toggleAnimsBtn
+anToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+anToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+anToggledOn.BorderSizePixel = 0
+anToggledOn.Size = UDim2.new(0, 15, 0, 15)
+anToggledOn.Visible = false
+
+anToggledOff.Name = "anToggledOff"
+anToggledOff.Parent = toggleAnimsBtn
+anToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+anToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+anToggledOff.BorderSizePixel = 0
+anToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel_8.Parent = toggleAnimsBtn
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(3.13333344, 0, -0.0666666701, 0)
+TextLabel_8.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_8.Font = Enum.Font.RobotoMono
+TextLabel_8.Text = "ZombieRun anim"
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 19.000
+
+visContent.Name = "visContent"
+visContent.Parent = swagUI
+visContent.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+visContent.BorderColor3 = Color3.fromRGB(15, 15, 15)
+visContent.BorderSizePixel = 0
+visContent.Position = UDim2.new(0.0208443347, 0, 0.0792643204, 0)
+visContent.Size = UDim2.new(0, 352, 0, 458)
+visContent.Visible = false
+
+toggleWaterMark.Name = "toggleWaterMark"
+toggleWaterMark.Parent = visContent
+toggleWaterMark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleWaterMark.BackgroundTransparency = 1.000
+toggleWaterMark.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleWaterMark.BorderSizePixel = 0
+toggleWaterMark.Position = UDim2.new(0.0282131657, 0, 0.0279898215, 0)
+toggleWaterMark.Size = UDim2.new(0, 15, 0, 15)
+
+togglemark.Name = "togglemark"
+togglemark.Parent = toggleWaterMark
+togglemark.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+togglemark.BackgroundTransparency = 0.500
+togglemark.BorderColor3 = Color3.fromRGB(0, 0, 0)
+togglemark.BorderSizePixel = 0
+togglemark.Size = UDim2.new(0, 15, 0, 15)
+togglemark.Font = Enum.Font.SourceSans
+togglemark.Text = ""
+togglemark.TextColor3 = Color3.fromRGB(0, 0, 0)
+togglemark.TextSize = 14.000
+
+markToggledOn.Name = "markToggledOn"
+markToggledOn.Parent = toggleWaterMark
+markToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+markToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+markToggledOn.BorderSizePixel = 0
+markToggledOn.Size = UDim2.new(0, 15, 0, 15)
+markToggledOn.Visible = false
+
+markToggledOff.Name = "markToggledOff"
+markToggledOff.Parent = toggleWaterMark
+markToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+markToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+markToggledOff.BorderSizePixel = 0
+markToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel_9.Parent = toggleWaterMark
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(1.93333328, 0, -0.0666666701, 0)
+TextLabel_9.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_9.Font = Enum.Font.RobotoMono
+TextLabel_9.Text = "WaterMark"
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 19.000
+
+toggleESP.Name = "toggleESP"
+toggleESP.Parent = visContent
+toggleESP.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleESP.BackgroundTransparency = 1.000
+toggleESP.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleESP.BorderSizePixel = 0
+toggleESP.Position = UDim2.new(0.0282131657, 0, 0.0913085938, 0)
+toggleESP.Size = UDim2.new(0, 15, 0, 15)
+
+toggleESP_2.Name = "toggleESP"
+toggleESP_2.Parent = toggleESP
+toggleESP_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleESP_2.BackgroundTransparency = 0.500
+toggleESP_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleESP_2.BorderSizePixel = 0
+toggleESP_2.Size = UDim2.new(0, 15, 0, 15)
+toggleESP_2.Font = Enum.Font.SourceSans
+toggleESP_2.Text = ""
+toggleESP_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleESP_2.TextSize = 14.000
+
+espToggledOn.Name = "espToggledOn"
+espToggledOn.Parent = toggleESP
+espToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+espToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+espToggledOn.BorderSizePixel = 0
+espToggledOn.Size = UDim2.new(0, 15, 0, 15)
+espToggledOn.Visible = false
+
+espToggledOff.Name = "espToggledOff"
+espToggledOff.Parent = toggleESP
+espToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+espToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+espToggledOff.BorderSizePixel = 0
+espToggledOff.Size = UDim2.new(0, 15, 0, 15)
+
+TextLabel_10.Parent = toggleESP
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(1.46666646, 0, -0.13333334, 0)
+TextLabel_10.Size = UDim2.new(0, 80, 0, 17)
+TextLabel_10.Font = Enum.Font.RobotoMono
+TextLabel_10.Text = "2D ESP"
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 19.000
+
+toggleGunChams.Name = "toggleGunChams"
+toggleGunChams.Parent = visContent
+toggleGunChams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleGunChams.BackgroundTransparency = 1.000
+toggleGunChams.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleGunChams.BorderSizePixel = 0
+toggleGunChams.Position = UDim2.new(0.0282131657, 0, 0.165544406, 0)
+toggleGunChams.Size = UDim2.new(0, 15, 0, 15)
+toggleGunChams.Visible = false
+
+toggleg_Chams.Name = "toggleg_Chams"
+toggleg_Chams.Parent = toggleGunChams
+toggleg_Chams.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+toggleg_Chams.BackgroundTransparency = 0.500
+toggleg_Chams.BorderColor3 = Color3.fromRGB(0, 0, 0)
+toggleg_Chams.BorderSizePixel = 0
+toggleg_Chams.Size = UDim2.new(0, 15, 0, 15)
+toggleg_Chams.Visible = false
+toggleg_Chams.Font = Enum.Font.SourceSans
+toggleg_Chams.Text = ""
+toggleg_Chams.TextColor3 = Color3.fromRGB(0, 0, 0)
+toggleg_Chams.TextSize = 14.000
+
+g_ChamsToggledOn.Name = "g_ChamsToggledOn"
+g_ChamsToggledOn.Parent = toggleGunChams
+g_ChamsToggledOn.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+g_ChamsToggledOn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+g_ChamsToggledOn.BorderSizePixel = 0
+g_ChamsToggledOn.Size = UDim2.new(0, 15, 0, 15)
+g_ChamsToggledOn.Visible = false
+
+g_ChamsToggledOff.Name = "g_ChamsToggledOff"
+g_ChamsToggledOff.Parent = toggleGunChams
+g_ChamsToggledOff.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+g_ChamsToggledOff.BorderColor3 = Color3.fromRGB(0, 0, 0)
+g_ChamsToggledOff.BorderSizePixel = 0
+g_ChamsToggledOff.Size = UDim2.new(0, 15, 0, 15)
+g_ChamsToggledOff.Visible = false
+
+TextLabel_11.Parent = toggleGunChams
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(1.46666646, 0, -0.13333334, 0)
+TextLabel_11.Size = UDim2.new(0, 66, 0, 17)
+TextLabel_11.Visible = false
+TextLabel_11.Font = Enum.Font.RobotoMono
+TextLabel_11.Text = "Chams"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 19.000
+
+WaterMark.Name = "WaterMark"
+WaterMark.Parent = ScreenGui
+WaterMark.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+WaterMark.BorderColor3 = Color3.fromRGB(0, 0, 0)
+WaterMark.BorderSizePixel = 0
+WaterMark.Position = UDim2.new(0.856357455, 0, 0.0098488275, 0)
+WaterMark.Size = UDim2.new(0, 214, 0, 24)
+WaterMark.Visible = false
+
+line.Name = "line"
+line.Parent = WaterMark
+line.BackgroundColor3 = Color3.fromRGB(190, 181, 255)
+line.BorderColor3 = Color3.fromRGB(0, 0, 0)
+line.BorderSizePixel = 0
+line.Position = UDim2.new(0, 0, 1.04166663, 0)
+line.Size = UDim2.new(0, 214, 0, -2)
+
+TextLabel_12.Parent = WaterMark
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_12.BorderSizePixel = 0
+TextLabel_12.Size = UDim2.new(0, 74, 0, 23)
+TextLabel_12.Font = Enum.Font.RobotoMono
+TextLabel_12.Text = "swagWare"
+TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.TextSize = 16.000
+
+Loader.Name = "Loader"
+Loader.Parent = ScreenGui
+Loader.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Loader.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Loader.BorderSizePixel = 0
+Loader.Position = UDim2.new(0.408690184, 0, 0.342039794, 0)
+Loader.Size = UDim2.new(0, 313, 0, 165)
+Loader.Visible = false
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(12, 12, 12)), ColorSequenceKeypoint.new(0.04, Color3.fromRGB(231, 231, 231)), ColorSequenceKeypoint.new(0.97, Color3.fromRGB(208, 208, 208)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(12, 12, 12))}
+UIGradient.Parent = Loader
+
+Frame_2.Parent = Loader
+Frame_2.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Frame_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.0319488831, 0, 0.0545454547, 0)
+Frame_2.Size = UDim2.new(0, 293, 0, 19)
+
+Frame_3.Parent = Loader
+Frame_3.BackgroundColor3 = Color3.fromRGB(181, 189, 255)
+Frame_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(0.0319488831, 0, 0.169696972, 0)
+Frame_3.Size = UDim2.new(0, 293, 0, 2)
+
+-- Scripts:
+
+local function JVYQVD_fake_script() -- tabContents.drag 
+	local script = Instance.new('LocalScript', tabContents)
+
+	local UIS = game:GetService("UserInputService")
+	
+	local tabFrame = script.Parent
+	local mainFrame = tabFrame.Parent
+	local dragToggle = false
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+		mainFrame.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	tabFrame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = mainFrame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	tabFrame.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateDrag(input)
+		end
+	end)
+	
+end
+coroutine.wrap(JVYQVD_fake_script)()
+local function UNXK_fake_script() -- tabContents.tabControl 
+	local script = Instance.new('LocalScript', tabContents)
+
+	-- Assuming these are the references to the frames and buttons
+	local mainContent = script.Parent.Parent.mainContent
+	local movementContents = script.Parent.Parent.MovementContents
+	local miscContents = script.Parent.Parent.miscContent
+	local movementTabButton = script.Parent.Parent.tabContents.MovementTab
+	local mainTabButton = script.Parent.Parent.tabContents.MainTab
+	local MiscTabButton = script.Parent.Parent.tabContents.MiscExtra
+	local visTabButton = script.Parent.Parent.tabContents.visTab
+	local visContents = script.Parent.Parent.visContent
+	
+	
+	
+	-- Initially, make MovementContents invisible
+	movementContents.Visible = false
+	miscContents.Visible = false
+	visContents.Visible = false
+	
+	-- Function to switch to the MovementContents tab
+	local function showMovementTab()
+		mainContent.Visible = false
+		visContents.Visible = false
+		miscContents.Visible = false
+		movementContents.Visible = true
+	end
+	
+	-- Function to switch to the MainContent tab
+	local function showMainTab()
+		movementContents.Visible = false
+		miscContents.Visible = false
+		visContents.Visible = false
+		mainContent.Visible = true
+	end
+	
+	local function showMiscTab()
+		visContents.Visible = false
+		miscContents.Visible = true
+		movementContents.Visible = false
+		mainContent.Visible = false
+	end
+	
+	local function showVisTab()
+		visContents.Visible = true
+		miscContents.Visible = false
+		movementContents.Visible = false
+		mainContent.Visible = false
+	end
+	
+	-- Connect button clicks to toggle visibility
+	movementTabButton.MouseButton1Click:Connect(showMovementTab)
+	mainTabButton.MouseButton1Click:Connect(showMainTab)
+	MiscTabButton.MouseButton1Click:Connect(showMiscTab)
+	visTabButton.MouseButton1Click:Connect(showVisTab)
+	
+end
+coroutine.wrap(UNXK_fake_script)()
+local function CAYPN_fake_script() -- swagUI.open&close 
+	local script = Instance.new('LocalScript', swagUI)
+
+	local UIS = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	local swagUI = script.Parent
+	
+	local isVisible = true
+	local fadeTime = 0.3  -- Time it takes to fade in/out (in seconds)
+	
+	local function toggleVisibility()
+		isVisible = not isVisible
+	
+		local goalTransparency = isVisible and 0 or 1  -- If visible, transparency should be 0, if invisible, transparency should be 1
+	
+		-- Create the tween to fade in or out
+		local tweenInfo = TweenInfo.new(fadeTime, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut)
+		local tween = TweenService:Create(swagUI, tweenInfo, {BackgroundTransparency = goalTransparency})
+	
+		-- Play the tween to fade the UI element
+		tween:Play()
+	
+		-- Wait until the tween finishes before setting visibility (so it's seamless)
+		tween.Completed:Wait()
+	
+		-- Set the actual visibility once the tween completes
+		swagUI.Visible = isVisible
+	end
+	
+	UIS.InputBegan:Connect(function(input, gameProcessedEvent)
+		if gameProcessedEvent then return end 
+	
+		if input.UserInputType == Enum.UserInputType.Keyboard and input.KeyCode == Enum.KeyCode.RightShift then
+			toggleVisibility()
+		end
+	end)
+	
+end
+coroutine.wrap(CAYPN_fake_script)()
+local function ENXUBW_fake_script() -- toggleUnlocker.unlockAnimsScript 
+	local script = Instance.new('LocalScript', toggleUnlocker)
+
+	-- MAIN SCRIPT
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent
+	local toggleContainer = toggleBtn.Parent
+	local On = toggleContainer:FindFirstChild("unlockToggledOn") -- The ON frame
+	local Off = toggleContainer:FindFirstChild("unlockToggledOff") -- The OFF frame
+	
+	-- Initial visibility
+	On.Visible = false
+	Off.Visible = true
+	
+	-- Animation IDs
+	local isOn = false
+	
+	-- Function to apply the specified animation ID
+	local function apply(character, animationId)
+	
+	end
+	
+	-- Function to handle the character's animations
+	local function handleCharacter(character)
+		-- Wait for the Animate script to load
+		if Players.LocalPlayer.Character then
+			handleCharacter(Players.LocalPlayer.Character)
+		end
+	end
+	
+	-- Toggle button logic
+	toggleBtn.MouseButton1Click:Connect(function()
+		isOn = not isOn -- Toggle the state
+		On.Visible = isOn
+		Off.Visible = not isOn
+	end)
+	
+	repeat wait() until game:IsLoaded() and game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+	
+	-- Unlock Animation Pack (Make the button visible)
+	local animationPackButton = game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+	if animationPackButton then
+		animationPackButton.Visible = true
+	end
+	
+	-- Remove existing animations if they exist
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lean") then
+		game.ReplicatedStorage.ClientAnimations.Lean:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Lay") then
+		game.ReplicatedStorage.ClientAnimations.Lay:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance1") then
+		game.ReplicatedStorage.ClientAnimations.Dance1:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Dance2") then
+		game.ReplicatedStorage.ClientAnimations.Dance2:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Greet") then
+		game.ReplicatedStorage.ClientAnimations.Greet:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Chest Pump") then
+		game.ReplicatedStorage.ClientAnimations["Chest Pump"]:Destroy()
+	end
+	
+	if game.ReplicatedStorage.ClientAnimations:FindFirstChild("Praying") then
+		game.ReplicatedStorage.ClientAnimations.Praying:Destroy()
+	end
+	
+	local Animations = game.ReplicatedStorage.ClientAnimations
+	
+	local LeanAnimation = Instance.new("Animation", Animations)
+	LeanAnimation.Name = "Lean"
+	LeanAnimation.AnimationId = "rbxassetid://3152375249"
+	
+	local LayAnimation = Instance.new("Animation", Animations)
+	LayAnimation.Name = "Lay"
+	LayAnimation.AnimationId = "rbxassetid://3152378852"
+	
+	local Dance1Animation = Instance.new("Animation", Animations)
+	Dance1Animation.Name = "Dance1"
+	Dance1Animation.AnimationId = "rbxassetid://3189773368"
+	
+	local Dance2Animation = Instance.new("Animation", Animations)
+	Dance2Animation.Name = "Dance2"
+	Dance2Animation.AnimationId = "rbxassetid://3189776546"
+	
+	local GreetAnimation = Instance.new("Animation", Animations)
+	GreetAnimation.Name = "Greet"
+	GreetAnimation.AnimationId = "rbxassetid://3189777795"
+	
+	local ChestPumpAnimation = Instance.new("Animation", Animations)
+	ChestPumpAnimation.Name = "Chest Pump"
+	ChestPumpAnimation.AnimationId = "rbxassetid://3189779152"
+	
+	local PrayingAnimation = Instance.new("Animation", Animations)
+	PrayingAnimation.Name = "Praying"
+	PrayingAnimation.AnimationId = "rbxassetid://3487719500"
+	
+	function AnimationPack(Character)
+		Character:WaitForChild("Humanoid")
+		repeat wait() until game.Players.LocalPlayer.Character:FindFirstChild("FULLY_LOADED_CHAR") and game.Players.LocalPlayer.PlayerGui.MainScreenGui:FindFirstChild("AnimationPack")
+	
+		local AnimationPack = game:GetService("Players").LocalPlayer.PlayerGui.MainScreenGui.AnimationPack
+		local ScrollingFrame = AnimationPack.ScrollingFrame
+		local CloseButton = AnimationPack.CloseButton
+	
+		local Lean = Character.Humanoid:LoadAnimation(LeanAnimation)
+		local Lay = Character.Humanoid:LoadAnimation(LayAnimation)
+		local Dance1 = Character.Humanoid:LoadAnimation(Dance1Animation)
+		local Dance2 = Character.Humanoid:LoadAnimation(Dance2Animation)
+		local Greet = Character.Humanoid:LoadAnimation(GreetAnimation)
+		local ChestPump = Character.Humanoid:LoadAnimation(ChestPumpAnimation)
+		local Praying = Character.Humanoid:LoadAnimation(PrayingAnimation)
+	
+		AnimationPack.Visible = true
+		AnimationPack.ScrollingFrame.UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+	
+		local buttonMappings = {
+			["Lean"] = "LeanButton",
+			["Lay"] = "LayButton",
+			["Dance1"] = "Dance1Button",
+			["Dance2"] = "Dance2Button",
+			["Greet"] = "GreetButton",
+			["Chest Pump"] = "ChestPumpButton",
+			["Praying"] = "PrayingButton"
+		}
+	
+		for _, v in pairs(ScrollingFrame:GetChildren()) do
+			if v:IsA("TextButton") and buttonMappings[v.Text] then
+				v.Name = buttonMappings[v.Text]
+			end
+		end
+	
+		function Stop()
+			Lean:Stop()
+			Lay:Stop()
+			Dance1:Stop()
+			Dance2:Stop()
+			Greet:Stop()
+			ChestPump:Stop()
+			Praying:Stop()
+		end
+	
+		local LeanTextButton = ScrollingFrame.LeanButton
+		local LayTextButton = ScrollingFrame.LayButton
+		local Dance1TextButton = ScrollingFrame.Dance1Button
+		local Dance2TextButton = ScrollingFrame.Dance2Button
+		local GreetTextButton = ScrollingFrame.GreetButton
+		local ChestPumpTextButton = ScrollingFrame.ChestPumpButton
+		local PrayingTextButton = ScrollingFrame.PrayingButton
+	
+		AnimationPack.MouseButton1Click:Connect(function()
+			ScrollingFrame.Visible = not ScrollingFrame.Visible
+			CloseButton.Visible = ScrollingFrame.Visible
+		end)
+	
+		CloseButton.MouseButton1Click:Connect(function()
+			ScrollingFrame.Visible = false
+			CloseButton.Visible = false
+		end)
+	
+		LeanTextButton.MouseButton1Click:Connect(function() Stop() Lean:Play() end)
+		LayTextButton.MouseButton1Click:Connect(function() Stop() Lay:Play() end)
+		Dance1TextButton.MouseButton1Click:Connect(function() Stop() Dance1:Play() end)
+		Dance2TextButton.MouseButton1Click:Connect(function() Stop() Dance2:Play() end)
+		GreetTextButton.MouseButton1Click:Connect(function() Stop() Greet:Play() end)
+		ChestPumpTextButton.MouseButton1Click:Connect(function() Stop() ChestPump:Play() end)
+		PrayingTextButton.MouseButton1Click:Connect(function() Stop() Praying:Play() end)
+	
+		Character.Humanoid.Running:Connect(Stop)
+		Character.Humanoid.Died:Connect(Stop)
+	end
+	
+	AnimationPack(Players.LocalPlayer.Character)
+	Players.LocalPlayer.CharacterAdded:Connect(AnimationPack)
+	
+end
+coroutine.wrap(ENXUBW_fake_script)()
+local function VGMRP_fake_script() -- toggleSpeed.toggleSpeedSCript 
+	local script = Instance.new('LocalScript', toggleSpeed)
+
+	local Players = game:GetService("Players")
+	local toggleBtn = script.Parent -- The button
+	local toggleContainer = toggleBtn.Parent -- The parent frame
+	local speedOn = toggleContainer:FindFirstChild("speedToggledOn") -- The ON frame
+	local speedOff = toggleContainer:FindFirstChild("speedToggledOff") -- The OFF frame
+	local speedAmountInput = script.Parent.Parent:WaitForChild("speedAmnt") -- The TextBox for speed input
+	
+	-- Default speed settings
+	local speedEnabled = false
+	local defaultSpeed = 16 -- Default WalkSpeed
+	
+	-- Function to set WalkSpeed
+	local function setSpeed()
+		local character = Players.LocalPlayer.Character
+		if character and character:FindFirstChild("Humanoid") and character:FindFirstChild("HumanoidRootPart") then
+			local humanoid = character:FindFirstChild("Humanoid")
+			local newSpeed = tonumber(speedAmountInput.Text) or defaultSpeed
+			humanoid.WalkSpeed = newSpeed
+			print("Speed set to: " .. newSpeed)
+		else
+			print("Character or Humanoid not found!")
+		end
+	end
+	
+	local gameIDToDisableSpeed = 2788229376 
+	local currentGameID = game.PlaceId
+	
+	
+	if currentGameID == gameIDToDisableSpeed then
+		toggleBtn.Visible = false
+	end
+	
+	
+	-- Function to reset WalkSpeed
+	local function resetSpeed()
+		local character = Players.LocalPlayer.Character
+		if character and character:FindFirstChild("Humanoid") then
+			local humanoid = character:FindFirstChild("Humanoid")
+			humanoid.WalkSpeed = defaultSpeed
+			print("Speed reset to default: " .. defaultSpeed)
+		else
+			print("Character or Humanoid not found!")
+		end
+	end
+	
+	-- Toggle speed hack on/off
+	toggleBtn.MouseButton1Click:Connect(function()
+		speedEnabled = not speedEnabled
+		speedOn.Visible = speedEnabled
+		speedOff.Visible = not speedEnabled
+	
+		if speedEnabled then
+			setSpeed()
+		else
+			resetSpeed()
+		end
+	end)
+	
+	-- Update speed dynamically when the text input changes
+	speedAmountInput.Changed:Connect(function()
+		if speedEnabled then
+			setSpeed()
+		end
+	end)
+	
+	-- Ensure character is fully loaded when the script runs
+	Players.LocalPlayer.CharacterAdded:Connect(function()
+		if speedEnabled then
+			setSpeed()
+		end
+	end)
+	
+end
+coroutine.wrap(VGMRP_fake_script)()
+local function KPJKBWH_fake_script() -- toggleJump.toggleJumpScipt 
+	local script = Instance.new('LocalScript', toggleJump)
+
+	local Players = game:GetService("Players")
+	local toggleBtn = script.Parent -- The button
+	local toggleContainer = toggleBtn.Parent -- The parent frame
+	local jumpOn = toggleContainer:FindFirstChild("jumpToggledOn") -- The ON frame
+	local jumpOff = toggleContainer:FindFirstChild("jumpToggledOff") -- The OFF frame
+	local jumpAmountInput = script.Parent.Parent:WaitForChild("jumpAmnt") -- The TextBox for jump height input
+	
+	-- Default jump settings
+	local jumpEnabled = false
+	local defaultJump = 50 -- Default JumpPower
+	
+	
+	local gameIDToDisableJump = 2788229376 
+	local currentGameID = game.PlaceId
+	
+	
+	if currentGameID == gameIDToDisableJump then
+		toggleBtn.Visible = false
+	end
+	
+	
+	-- Function to set JumpPower
+	local function setJump()
+		local character = Players.LocalPlayer.Character
+		if character and character:FindFirstChild("Humanoid") and character:FindFirstChild("HumanoidRootPart") then
+			local humanoid = character:FindFirstChild("Humanoid")
+			local newJump = tonumber(jumpAmountInput.Text) or defaultJump
+			humanoid.UseJumpPower = true
+			humanoid.JumpPower = newJump
+			print("JumpPower set to: " .. newJump)
+		else
+			print("Character or Humanoid not found!")
+		end
+	end
+	
+	-- Function to reset JumpPower
+	local function resetJump()
+		local character = Players.LocalPlayer.Character
+		if character and character:FindFirstChild("Humanoid") then
+			local humanoid = character:FindFirstChild("Humanoid")
+			humanoid.JumpPower = defaultJump
+			print("JumpPower reset to default: " .. defaultJump)
+		else
+			print("Character or Humanoid not found!")
+		end
+	end
+	
+	-- Toggle jump hack on/off
+	toggleBtn.MouseButton1Click:Connect(function()
+		jumpEnabled = not jumpEnabled
+		jumpOn.Visible = jumpEnabled
+		jumpOff.Visible = not jumpEnabled
+	
+		if jumpEnabled then
+			setJump()
+		else
+			resetJump()
+		end
+	end)
+	
+	-- Update jump height dynamically when the text input changes
+	jumpAmountInput.Changed:Connect(function()
+		if jumpEnabled then
+			setJump()
+		end
+	end)
+	
+	-- Ensure character is fully loaded when the script runs
+	Players.LocalPlayer.CharacterAdded:Connect(function()
+		if jumpEnabled then
+			setJump()
+		end
+	end)
+	
+end
+coroutine.wrap(KPJKBWH_fake_script)()
+local function SYXOVQV_fake_script() -- toggleFly.toggleFlySCript 
+	local script = Instance.new('LocalScript', toggleFly)
+
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local toggleBtn = script.Parent -- The button
+	local toggleContainer = toggleBtn.Parent -- The parent frame
+	local flyOn = toggleContainer:FindFirstChild("flyToggledOn") -- The ON frame
+	local flyOff = toggleContainer:FindFirstChild("flyToggledOff") -- The OFF frame
+	local speedInput = script.Parent.Parent:WaitForChild("flyAmnt") -- Speed input box
+	local keybindButton = script.Parent.Parent:WaitForChild("keybindButton1")
+	
+	-- Default settings
+	local flyEnabled = false
+	local cframeFlySpeed = 16
+	local cframeFlyKeybind = nil -- Default keybind
+	local delta_time = 0.016 -- Simulated frame delta time
+	
+	-- Function to toggle fly state
+	local function toggleFly()
+		flyEnabled = not flyEnabled
+		flyOn.Visible = flyEnabled
+		flyOff.Visible = not flyEnabled
+	end
+	
+	-- Update fly speed dynamically
+	speedInput.Changed:Connect(function()
+		local newSpeed = tonumber(speedInput.Text)
+		if newSpeed then
+			cframeFlySpeed = newSpeed
+		end
+	end)
+	
+	-- Keybinding setup
+	local waitingForKeybind = false
+	keybindButton.MouseButton1Click:Connect(function()
+		waitingForKeybind = true
+		keybindButton.Text = ".."
+	end)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if waitingForKeybind and input.UserInputType == Enum.UserInputType.Keyboard then
+			cframeFlyKeybind = input.KeyCode
+			keybindButton.Text = input.KeyCode.Name
+			waitingForKeybind = false
+		elseif input.KeyCode == cframeFlyKeybind then
+			toggleFly()
+		end
+	end)
+	
+	-- Main fly loop
+	RunService.Heartbeat:Connect(function()
+		local player = Players.LocalPlayer
+		if not flyEnabled or not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local humanoidRootPart = player.Character.HumanoidRootPart
+		local moveDirection = player.Character.Humanoid.MoveDirection
+	
+		local verticalMove = (UserInputService:IsKeyDown(Enum.KeyCode.Space) and cframeFlySpeed / 8 or UserInputService:IsKeyDown(Enum.KeyCode.LeftShift) and -cframeFlySpeed / 8) or 0
+	
+		humanoidRootPart.CFrame = humanoidRootPart.CFrame + (moveDirection * delta_time) * cframeFlySpeed * 10
+		humanoidRootPart.CFrame = humanoidRootPart.CFrame + Vector3.new(0, verticalMove, 0)
+		humanoidRootPart.Velocity = (humanoidRootPart.Velocity * Vector3.new(1, 0, 1)) + Vector3.new(0, 1.9, 0)
+	end)
+	
+end
+coroutine.wrap(SYXOVQV_fake_script)()
+local function GADZRI_fake_script() -- toggleCspeed.toggleCspeedScript 
+	local script = Instance.new('LocalScript', toggleCspeed)
+
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local RunService = game:GetService("RunService")
+	
+	local toggleBtn = script.Parent -- The button
+	local toggleContainer = toggleBtn.Parent -- The parent frame
+	local speedOn = toggleContainer:FindFirstChild("cSpeedToggledOn") -- The ON frame
+	local speedOff = toggleContainer:FindFirstChild("cSpeedToggledOff") -- The OFF frame
+	local speedInput = script.Parent.Parent:WaitForChild("cspeedAmnt") -- Speed input box
+	local keybindButton = script.Parent.Parent:WaitForChild("keybindButton3")
+	
+	-- Default settings
+	local cSpeedEnabled = false
+	local cSpeed = 16 -- Default speed
+	local cSpeedKeybind = nil -- Default keybind
+	local delta_time = 0.016 -- Simulated frame delta time
+	
+	-- Function to toggle speed state
+	local function toggleSpeed()
+		cSpeedEnabled = not cSpeedEnabled
+		speedOn.Visible = cSpeedEnabled
+		speedOff.Visible = not cSpeedEnabled
+	end
+	
+	-- Update speed dynamically
+	speedInput.Changed:Connect(function()
+		local newSpeed = tonumber(speedInput.Text)
+		if newSpeed then
+			cSpeed = newSpeed
+		end
+	end)
+	
+	-- Keybinding setup
+	local waitingForKeybind = false
+	keybindButton.MouseButton1Click:Connect(function()
+		waitingForKeybind = true
+		keybindButton.Text = ".."
+	end)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if waitingForKeybind and input.UserInputType == Enum.UserInputType.Keyboard then
+			cSpeedKeybind = input.KeyCode
+			keybindButton.Text = input.KeyCode.Name
+			waitingForKeybind = false
+		elseif input.KeyCode == cSpeedKeybind then
+			toggleSpeed()
+		end
+	end)
+	
+	-- Main speed loop
+	RunService.Heartbeat:Connect(function()
+		local player = Players.LocalPlayer
+		if not cSpeedEnabled or not player.Character or not player.Character:FindFirstChild("HumanoidRootPart") then return end
+	
+		local humanoidRootPart = player.Character.HumanoidRootPart
+		local humanoid = player.Character.Humanoid
+		local moveDirection = humanoid.MoveDirection
+	
+		-- Apply CFrame speed based on movement direction
+		humanoidRootPart.CFrame = humanoidRootPart.CFrame + moveDirection * cSpeed * delta_time
+	end)
+	
+end
+coroutine.wrap(GADZRI_fake_script)()
+local function FBTOS_fake_script() -- toggleHit.toggleHitBoxScript 
+	local script = Instance.new('LocalScript', toggleHit)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local localPlayer = Players.LocalPlayer
+	local mouse = localPlayer:GetMouse()
+	local camera = workspace.CurrentCamera
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent -- The button
+	local toggleContainer = toggleBtn.Parent -- The parent frame
+	local hitBoxOn = toggleContainer:FindFirstChild("hitbxToggledOn") -- The ON frame
+	local hitBoxOff = toggleContainer:FindFirstChild("hitbxToggledOff") -- The OFF frame
+	
+	-- Hitbox Controls
+	local hitBoxSizeInput = script.Parent.Parent:WaitForChild("hitboxSize") -- The TextBox for hitbox size input
+	local hitBoxTrnsInput = script.Parent.Parent:WaitForChild("hitBoxTrns") -- The TextBox for hitbox transparency input
+	
+	-- Default Settings
+	local hitBoxSize = 5 -- Default hitbox size
+	local hitBoxTransparency = 0.7 -- Default transparency
+	local hitBoxExpanderENABLED = false -- State of the hitbox expander
+	local color = Color3.fromRGB(255, 0, 0) -- Light red color
+	
+	-- Hitbox Settings
+	local HitboxSettings = {
+		Enabled = hitBoxExpanderENABLED,
+		Size = Vector3.new(hitBoxSize, hitBoxSize, hitBoxSize),
+		Transparency = hitBoxTransparency,
+		Color = color
+	}
+	
+	-- Function to update hitbox size and add visualization
+	local function expandHitbox(player)
+		if player == Players.LocalPlayer then return end -- Skip the local player
+	
+		local function updateCharacter(character)
+			local rootPart = character:FindFirstChild("HumanoidRootPart")
+			local humanoid = character:FindFirstChild("Humanoid")
+	
+			if rootPart and humanoid and humanoid.Health > 0 then
+				-- Resize the hitbox
+				rootPart.Size = HitboxSettings.Size
+				rootPart.Transparency = 1 -- Make the hitbox itself invisible
+				rootPart.CanCollide = false -- Avoid collision issues
+	
+				-- Add visualization
+				if not rootPart:FindFirstChild("HitboxVisualization") then
+					local box = Instance.new("BoxHandleAdornment")
+					box.Name = "HitboxVisualization"
+					box.Adornee = rootPart
+					box.Size = HitboxSettings.Size
+					box.Color3 = HitboxSettings.Color
+					box.Transparency = HitboxSettings.Transparency
+					box.ZIndex = 0
+					box.AlwaysOnTop = true
+					box.Parent = rootPart
+				else
+					-- Update existing visualization
+					local box = rootPart:FindFirstChild("HitboxVisualization")
+					box.Size = HitboxSettings.Size
+					box.Transparency = HitboxSettings.Transparency
+				end
+			end
+		end
+	
+		-- Update the hitbox whenever the player's health changes
+		local function onHumanoidChanged(humanoid)
+			humanoid.HealthChanged:Connect(function()
+				local rootPart = player.Character and player.Character:FindFirstChild("HumanoidRootPart")
+				if rootPart then
+					if humanoid.Health <= 0 then
+						-- Player is dead; remove visualization
+						if rootPart:FindFirstChild("HitboxVisualization") then
+							rootPart.HitboxVisualization:Destroy()
+						end
+					else
+						-- Player is alive; apply visualization
+						updateCharacter(player.Character)
+					end
+				end
+			end)
+		end
+	
+		-- Check if the player has a character
+		if player.Character then
+			local humanoid = player.Character:FindFirstChild("Humanoid")
+			if humanoid then
+				updateCharacter(player.Character)
+				onHumanoidChanged(humanoid)
+			end
+		end
+	
+		-- Listen for new character spawns
+		player.CharacterAdded:Connect(function(character)
+			-- Wait for the humanoid to be fully loaded
+			local humanoid = character:WaitForChild("Humanoid", 10)
+			if humanoid then
+				-- Add a small delay before applying hitbox changes (to ensure full initialization)
+				wait(0.2) -- Adjust this delay as needed
+				updateCharacter(character)
+				onHumanoidChanged(humanoid)
+			end
+		end)
+	end
+	
+	-- Initialize hitbox expander
+	local function initialize()
+		if not HitboxSettings.Enabled then return end
+	
+		-- Apply to all current players
+		for _, player in ipairs(Players:GetPlayers()) do
+			expandHitbox(player)
+		end
+	
+		-- Listen for new players
+		Players.PlayerAdded:Connect(expandHitbox)
+	end
+	
+	-- Cleanup function
+	local function cleanup()
+		for _, player in ipairs(Players:GetPlayers()) do
+			local character = player.Character
+			if character and character:FindFirstChild("HumanoidRootPart") then
+				local rootPart = character.HumanoidRootPart
+				if rootPart:FindFirstChild("HitboxVisualization") then
+					rootPart.HitboxVisualization:Destroy()
+				end
+				rootPart.Size = Vector3.new(2, 2, 1) -- Default size
+				rootPart.Transparency = 1
+				rootPart.CanCollide = true
+			end
+		end
+	end
+	
+	-- Toggle the hitbox expander on and off
+	toggleBtn.MouseButton1Click:Connect(function()
+		hitBoxExpanderENABLED = not hitBoxExpanderENABLED
+		HitboxSettings.Enabled = hitBoxExpanderENABLED
+		hitBoxOn.Visible = hitBoxExpanderENABLED
+		hitBoxOff.Visible = not hitBoxExpanderENABLED
+	
+		if hitBoxExpanderENABLED then
+			initialize()
+		else
+			cleanup()
+		end
+	end)
+	
+	-- Update hitbox size dynamically
+	hitBoxSizeInput.Changed:Connect(function()
+		local newSize = tonumber(hitBoxSizeInput.Text)
+		if newSize and newSize > 0 then
+			hitBoxSize = newSize
+			HitboxSettings.Size = Vector3.new(hitBoxSize, hitBoxSize, hitBoxSize)
+	
+			-- Reinitialize the hitbox expander with the new size
+			if hitBoxExpanderENABLED then
+				cleanup()
+				initialize()
+			end
+		end
+	end)
+	
+	-- Update transparency dynamically
+	hitBoxTrnsInput.Changed:Connect(function()
+		local newTransparency = tonumber(hitBoxTrnsInput.Text)
+		if newTransparency and newTransparency >= 0 and newTransparency <= 1 then
+			hitBoxTransparency = newTransparency
+			HitboxSettings.Transparency = hitBoxTransparency
+	
+			-- Reinitialize the hitbox expander with the new transparency
+			if hitBoxExpanderENABLED then
+				cleanup()
+				initialize()
+			end
+		end
+	end)
+	
+	-- Start
+	initialize()
+	
+	-- Cleanup if toggled off
+	RunService.Stepped:Connect(function()
+		if not HitboxSettings.Enabled then
+			cleanup()
+		end
+	end)
+end
+coroutine.wrap(FBTOS_fake_script)()
+local function RUTIRS_fake_script() -- hitPartDropDown.LocalScript 
+	local script = Instance.new('LocalScript', hitPartDropDown)
+
+	local textButton = script.Parent:FindFirstChild("TextButton") -- The dropdown button
+	local aimOptions = script.Parent:FindFirstChild("hitOptions") -- The dropdown frame
+	local headPartButton = aimOptions:FindFirstChild("headPartButton") -- Option 1
+	local rootPartButton = aimOptions:FindFirstChild("rootPartButton") -- Option 2
+	local tweenService = game:GetService("TweenService")
+	
+	-- Initial properties
+	aimOptions.Visible = false
+	aimOptions.Size = UDim2.new(0, 103, 0, 0)
+	
+	local isOpen = false -- Track dropdown state
+	
+	local function toggleDropdown()
+		if isOpen then
+			-- Close the dropdown
+			local shrinkTween = tweenService:Create(aimOptions, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 103, 0, 0)})
+			shrinkTween:Play()
+			shrinkTween.Completed:Connect(function()
+				aimOptions.Visible = false
+			end)
+		else
+			-- Open the dropdown
+			aimOptions.Visible = true
+			local expandTween = tweenService:Create(aimOptions, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 103, 0, 93)})
+			expandTween:Play()
+		end
+		isOpen = not isOpen
+	end
+	
+	-- Function to change text when an option is clicked
+	local function changeText(optionButton)
+		textButton.Text = optionButton.Text
+		toggleDropdown() -- Close the dropdown after selecting
+	end
+	
+	-- Connect button clicks
+	textButton.MouseButton1Click:Connect(toggleDropdown)
+	headPartButton.MouseButton1Click:Connect(function() changeText(headPartButton) end)
+	rootPartButton.MouseButton1Click:Connect(function() changeText(rootPartButton) end)
+	
+end
+coroutine.wrap(RUTIRS_fake_script)()
+local function RVDB_fake_script() -- toggleAim.toggleAimScript 
+	local script = Instance.new('LocalScript', toggleAim)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	local UserInputService = game:GetService("UserInputService")
+	local TweenService = game:GetService("TweenService")
+	
+	local localPlayer = Players.LocalPlayer
+	local mouse = localPlayer:GetMouse()
+	local camera = workspace.CurrentCamera
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent -- The button (toggleAim)
+	local toggleContainer = toggleBtn.Parent -- The parent frame (toggleAimBtn)
+	local aimOn = toggleContainer:FindFirstChild("aimToggledOn") -- The ON frame
+	local aimOff = toggleContainer:FindFirstChild("aimToggledOff") -- The OFF frame
+	
+	-- Dropdown Buttons
+	local aimPartDropdown = script.Parent.Parent.Parent:FindFirstChild("aimPartDropDown")
+	
+	local aimOptions = aimPartDropdown:FindFirstChild("aimOptions")
+	local headPartButton = aimOptions:FindFirstChild("headPartButton")
+	local rootPartButton = aimOptions:FindFirstChild("rootPartButton")
+	local aimPartTextButton = aimPartDropdown:FindFirstChild("TextButton")
+	
+	-- Smoothing Control
+	local aimSmoothing = script.Parent.Parent:WaitForChild("aimSmoothing") -- The TextBox for smoothing input
+	local keybindButton = script.Parent.Parent:WaitForChild("keybindButton2")
+	
+	local aimbotEnabled = false -- Aimbot state (off by default)
+	local lockedPlayer = nil -- The currently locked-on player
+	local originalCameraCFrame = camera.CFrame -- Store the camera's position when toggling off
+	
+	local cameraTween = nil 
+	local savedCameraCFrame = nil 
+	
+	-- Keybinding state
+	local keybindActive = false
+	local keybindKey = nil -- Default to no keybind
+	
+	-- Default target part
+	local selectedTargetPart = "Head"
+	
+	-- Function to update selected target part
+	local function updateTargetPart(newPart)
+		selectedTargetPart = newPart
+		aimPartTextButton.Text = newPart -- Update button text
+	end
+	
+	-- Connect buttons to update target part
+	headPartButton.MouseButton1Click:Connect(function()
+		updateTargetPart("Head")
+	end)
+	
+	rootPartButton.MouseButton1Click:Connect(function()
+		updateTargetPart("HumanoidRootPart")
+	end)
+	
+	-- Toggle Button Logic
+	toggleBtn.MouseButton1Click:Connect(function()
+		aimbotEnabled = not aimbotEnabled -- Toggle the state
+	
+		if not aimbotEnabled then
+			lockedPlayer = nil  -- Reset locked player when turning off aimbot
+			if cameraTween then
+				cameraTween:Pause()  -- Stop the tween if it is running
+				cameraTween = nil  -- Clear the tween reference
+			end
+		else
+			savedCameraCFrame = camera.CFrame -- Save camera position when enabling
+		end
+	
+		aimOn.Visible = aimbotEnabled -- Show ON state
+		aimOff.Visible = not aimbotEnabled -- Show OFF state
+	end)
+	
+	-- Function to get the closest player to the cursor
+	local function getClosestPlayerToCursor()
+		local closestPlayer = nil
+		local shortestDistance = math.huge
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player ~= localPlayer and player.Character and player.Character:FindFirstChild(selectedTargetPart) then
+				local aimPart = player.Character:FindFirstChild(selectedTargetPart)
+				local screenPosition, onScreen = camera:WorldToViewportPoint(aimPart.Position)
+	
+				if onScreen then
+					local mousePosition = Vector2.new(mouse.X, mouse.Y)
+					local aimPartPosition = Vector2.new(screenPosition.X, screenPosition.Y)
+					local distance = (mousePosition - aimPartPosition).Magnitude
+	
+					if distance < shortestDistance then
+						shortestDistance = distance
+						closestPlayer = player
+					end
+				end
+			end
+		end
+	
+		return closestPlayer
+	end
+	
+	-- Smoothly update the camera to lock onto the target
+	RunService.RenderStepped:Connect(function()
+		if aimbotEnabled then
+			if not lockedPlayer or not lockedPlayer.Character or not lockedPlayer.Character:FindFirstChild(selectedTargetPart) then
+				lockedPlayer = getClosestPlayerToCursor()
+			end
+	
+			if lockedPlayer and lockedPlayer.Character and lockedPlayer.Character:FindFirstChild(selectedTargetPart) then
+				local aimPart = lockedPlayer.Character:FindFirstChild(selectedTargetPart)
+				local targetCFrame = CFrame.new(camera.CFrame.Position, aimPart.Position)
+	
+				local smoothingValue = tonumber(aimSmoothing.Text) or 0.1 
+				local invertedSmoothing = 1 - smoothingValue
+				local tweenDuration = math.clamp(invertedSmoothing * 1.0, 0.01, 1.0)
+	
+				if smoothingValue >= 0.95 then
+					camera.CFrame = targetCFrame
+				else
+					local tweenInfo = TweenInfo.new(tweenDuration, Enum.EasingStyle.Quad, Enum.EasingDirection.Out)
+					if cameraTween then
+						cameraTween:Cancel()
+					end
+					cameraTween = TweenService:Create(camera, tweenInfo, {CFrame = targetCFrame})
+					cameraTween:Play()
+				end
+			end
+		end
+	end)
+	
+	-- Listen for key press to toggle the aimbot
+	UserInputService.InputBegan:Connect(function(input, gameProcessedEvent)
+		if gameProcessedEvent then return end
+	
+		if input.KeyCode == keybindKey then
+			aimbotEnabled = not aimbotEnabled
+	
+			if not aimbotEnabled then
+				lockedPlayer = nil
+				if cameraTween then
+					cameraTween:Pause()
+					cameraTween = nil
+				end
+			else
+				savedCameraCFrame = camera.CFrame
+			end
+	
+			aimOn.Visible = aimbotEnabled
+			aimOff.Visible = not aimbotEnabled
+		end
+	end)
+	
+	-- Keybind Selection Logic
+	keybindButton.MouseButton1Click:Connect(function()
+		if not keybindActive then
+			keybindActive = true
+			keybindButton.Text = ".." 
+		end
+	end)
+	
+	UserInputService.InputBegan:Connect(function(input, gameProcessed)
+		if gameProcessed then return end
+	
+		if keybindActive then
+			if input.UserInputType == Enum.UserInputType.Keyboard then
+				keybindKey = input.KeyCode
+				keybindButton.Text = keybindKey.Name
+				keybindActive = false
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(RVDB_fake_script)()
+local function QYLJBEQ_fake_script() -- aimPartDropDown.LocalScript 
+	local script = Instance.new('LocalScript', aimPartDropDown)
+
+	local textButton = script.Parent:FindFirstChild("TextButton") -- The dropdown button
+	local aimOptions = script.Parent:FindFirstChild("aimOptions") -- The dropdown frame
+	local headPartButton = aimOptions:FindFirstChild("headPartButton") -- Option 1
+	local rootPartButton = aimOptions:FindFirstChild("rootPartButton") -- Option 2
+	local tweenService = game:GetService("TweenService")
+	
+	-- Initial properties
+	aimOptions.Visible = false
+	aimOptions.Size = UDim2.new(0, 103, 0, 0)
+	
+	local isOpen = false -- Track dropdown state
+	
+	local function toggleDropdown()
+		if isOpen then
+			-- Close the dropdown
+			local shrinkTween = tweenService:Create(aimOptions, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 103, 0, 0)})
+			shrinkTween:Play()
+			shrinkTween.Completed:Connect(function()
+				aimOptions.Visible = false
+			end)
+		else
+			-- Open the dropdown
+			aimOptions.Visible = true
+			local expandTween = tweenService:Create(aimOptions, TweenInfo.new(0.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {Size = UDim2.new(0, 103, 0, 93)})
+			expandTween:Play()
+		end
+		isOpen = not isOpen
+	end
+	
+	-- Function to change text when an option is clicked
+	local function changeText(optionButton)
+		textButton.Text = optionButton.Text
+		toggleDropdown() -- Close the dropdown after selecting
+	end
+	
+	-- Connect button clicks
+	textButton.MouseButton1Click:Connect(toggleDropdown)
+	headPartButton.MouseButton1Click:Connect(function() changeText(headPartButton) end)
+	rootPartButton.MouseButton1Click:Connect(function() changeText(rootPartButton) end)
+	
+end
+coroutine.wrap(QYLJBEQ_fake_script)()
+local function UNBBHM_fake_script() -- swagUI.auth 
+	local script = Instance.new('LocalScript', swagUI)
+
+	local WhitelistedUsers = {
+		[7102405327] = true, 
+		[7826679903] = true,
+		[5725082878] = true,6
+		[7973601139] = true,
+		[3676181453] = true,
+		
+	}
+	
+	local Players = game:GetService("Players")
+	local LocalPlayer = Players.LocalPlayer
+	
+	if not WhitelistedUsers[LocalPlayer.UserId] then
+		LocalPlayer:Kick("You do not have permission to execute this script.")
+	else
+		print("Access granted.")
+		
+	end
+end
+coroutine.wrap(UNBBHM_fake_script)()
+local function BYOOIX_fake_script() -- toggleZombieAnim.toggleZombieAnimScript 
+	local script = Instance.new('LocalScript', toggleZombieAnim)
+
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent
+	local toggleContainer = toggleBtn.Parent
+	local On = toggleContainer:FindFirstChild("anToggledOn") -- The ON frame
+	local Off = toggleContainer:FindFirstChild("anToggledOff") -- The OFF frame
+	
+	-- Initial visibility
+	On.Visible = false
+	Off.Visible = true
+	
+	-- Animation IDs
+	local isOn = false
+	local newRunAnimationId = "rbxassetid://616163682" -- New animation for running
+	local defaultRunAnimationId = nil -- To store the original animation ID
+	
+	-- Function to apply the specified animation ID
+	local function applyRunAnimation(character, animationId)
+		local animateScript = character:FindFirstChild("Animate")
+		if animateScript and animateScript:FindFirstChild("run") then
+			local runAnim = animateScript.run:FindFirstChild("RunAnim")
+			if runAnim and runAnim:IsA("Animation") then
+				-- Store the default animation ID if it's the first time
+				if not defaultRunAnimationId and runAnim.AnimationId ~= "" then
+					defaultRunAnimationId = runAnim.AnimationId
+				end
+				-- Only set the AnimationId if the provided value is valid
+				if animationId and animationId ~= "" then
+					runAnim.AnimationId = animationId
+				end
+			end
+		end
+	end
+	
+	-- Function to handle the character's animations
+	local function handleCharacter(character)
+		-- Wait for the Animate script to load
+		local animateScript = character:WaitForChild("Animate")
+		-- Apply the appropriate animation based on toggle state
+		if isOn then
+			applyRunAnimation(character, newRunAnimationId)
+		else
+			applyRunAnimation(character, defaultRunAnimationId)
+		end
+	end
+	
+	-- Monitor character respawns
+	Players.LocalPlayer.CharacterAdded:Connect(function(character)
+		handleCharacter(character)
+	end)
+	
+	-- Handle existing character (if present)
+	if Players.LocalPlayer.Character then
+		handleCharacter(Players.LocalPlayer.Character)
+	end
+	
+	-- Toggle button logic
+	toggleBtn.MouseButton1Click:Connect(function()
+		isOn = not isOn -- Toggle the state
+		On.Visible = isOn
+		Off.Visible = not isOn
+	
+		-- Apply or reset the animation based on the toggle state
+		if Players.LocalPlayer.Character then
+			if isOn then
+				applyRunAnimation(Players.LocalPlayer.Character, newRunAnimationId)
+			else
+				applyRunAnimation(Players.LocalPlayer.Character, defaultRunAnimationId)
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(BYOOIX_fake_script)()
+local function SWMCEIO_fake_script() -- togglemark.togglemarkScript 
+	local script = Instance.new('LocalScript', togglemark)
+
+	local Players = game:GetService("Players")
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent
+	local toggleContainer = toggleBtn.Parent
+	local On = toggleContainer:FindFirstChild("markToggledOn") -- The ON frame
+	local Off = toggleContainer:FindFirstChild("markToggledOff") -- The OFF frame
+	local watermark = Players.LocalPlayer:WaitForChild("PlayerGui"):FindFirstChild("ScreenGui"):FindFirstChild("WaterMark")
+	
+	-- Initial visibility
+	On.Visible = false
+	Off.Visible = true
+	local isOn = false
+	
+	-- Toggle button logic
+	toggleBtn.MouseButton1Click:Connect(function()
+		isOn = not isOn -- Toggle the state
+		On.Visible = isOn
+		Off.Visible = not isOn
+	
+		-- Toggle the visibility of the watermark
+		if watermark then
+			watermark.Visible = isOn
+		end
+	end)
+	
+end
+coroutine.wrap(SWMCEIO_fake_script)()
+local function IWRON_fake_script() -- toggleESP_2.toggleESPScript 
+	local script = Instance.new('LocalScript', toggleESP_2)
+
+	local Players = game:GetService("Players")
+	
+	-- Toggle Button Variables
+	local toggleBtn = script.Parent
+	local toggleContainer = toggleBtn.Parent
+	local On = toggleContainer:FindFirstChild("espToggledOn") -- The ON frame
+	local Off = toggleContainer:FindFirstChild("espToggledOff") -- The OFF frame
+	
+	-- Initial visibility
+	On.Visible = false
+	Off.Visible = true
+	local isOn = false
+	
+	-- ESP Variables
+	local player = Players.LocalPlayer
+	local camera = game:GetService("Workspace").CurrentCamera
+	local mouse = player:GetMouse()
+	
+	-- Store ESP objects
+	local espObjects = {}
+	
+	-- Settings (copied from original ESP script)
+	local Settings = {
+		Box_Color = Color3.fromRGB(255, 0, 0),
+		Tracer_Color = Color3.fromRGB(255, 0, 0),
+		Tracer_Thickness = 1,
+		Box_Thickness = 1,
+		Tracer_Origin = "Bottom",
+		Tracer_FollowMouse = false,
+		Tracers = false  -- Disabled by default to match your requirement
+	}
+	
+	local Team_Check = {
+		TeamCheck = false,
+		Green = Color3.fromRGB(0, 255, 0),
+		Red = Color3.fromRGB(255, 0, 0)
+	}
+	local TeamColor = true
+	
+	-- Function to create ESP objects (modified to only create box)
+	local function NewQuad(thickness, color)
+		local quad = Drawing.new("Quad")
+		quad.Visible = false
+		quad.PointA = Vector2.new(0,0)
+		quad.PointB = Vector2.new(0,0)
+		quad.PointC = Vector2.new(0,0)
+		quad.PointD = Vector2.new(0,0)
+		quad.Color = color
+		quad.Filled = false
+		quad.Thickness = thickness
+		quad.Transparency = 1
+		quad.ZIndex = 1 -- Ensure the ESP is rendered behind UI
+		return quad
+	end
+	
+	local function Visibility(state, lib)
+		for _, x in pairs(lib) do
+			x.Visible = state
+		end
+	end
+	
+	local function ESP(plr)
+		local library = {
+			-- Only box and black box (border)
+			black = NewQuad(Settings.Box_Thickness*2, Color3.fromRGB(0, 0, 0)),
+			box = NewQuad(Settings.Box_Thickness, Settings.Box_Color)
+		}
+	
+		-- Store the library for this player
+		table.insert(espObjects, library)
+	
+		local function Updater()
+			local connection
+			connection = game:GetService("RunService").RenderStepped:Connect(function()
+				if not isOn then
+					Visibility(false, library)
+					return
+				end
+	
+				if plr.Character ~= nil and plr.Character:FindFirstChild("Humanoid") ~= nil and 
+					plr.Character:FindFirstChild("HumanoidRootPart") ~= nil and 
+					plr.Character.Humanoid.Health > 0 and 
+					plr.Character:FindFirstChild("Head") ~= nil then
+	
+					local HumPos, OnScreen = camera:WorldToViewportPoint(plr.Character.HumanoidRootPart.Position)
+	
+					-- Check if the player is behind the near plane of the camera
+					if OnScreen and HumPos.Z > 0 and HumPos.Z < camera.ViewportSize.X then
+						local head = camera:WorldToViewportPoint(plr.Character.Head.Position)
+						local DistanceY = math.clamp((Vector2.new(head.X, head.Y) - Vector2.new(HumPos.X, HumPos.Y)).magnitude, 2, math.huge)
+	
+						local function Size(item)
+							item.PointA = Vector2.new(HumPos.X + DistanceY, HumPos.Y - DistanceY*2)
+							item.PointB = Vector2.new(HumPos.X - DistanceY, HumPos.Y - DistanceY*2)
+							item.PointC = Vector2.new(HumPos.X - DistanceY, HumPos.Y + DistanceY*2)
+							item.PointD = Vector2.new(HumPos.X + DistanceY, HumPos.Y + DistanceY*2)
+						end
+						Size(library.box)
+						Size(library.black)
+	
+						-- Team color handling
+						if Team_Check.TeamCheck then
+							library.box.Color = plr.TeamColor == player.TeamColor and Team_Check.Green or Team_Check.Red
+						elseif TeamColor then
+							library.box.Color = plr.TeamColor.Color
+						else
+							library.box.Color = Settings.Box_Color
+						end
+	
+						Visibility(true, library)
+					else 
+						Visibility(false, library)
+					end
+				else 
+					Visibility(false, library)
+					if game.Players:FindFirstChild(plr.Name) == nil then
+						connection:Disconnect()
+					end
+				end
+			end)
+		end
+		coroutine.wrap(Updater)()
+	end
+	
+	-- Function to clear all ESP objects
+	local function ClearESP()
+		for _, library in ipairs(espObjects) do
+			Visibility(false, library)
+		end
+		espObjects = {}
+	end
+	
+	-- Initial ESP setup for existing players
+	for i, v in pairs(Players:GetPlayers()) do
+		if v.Name ~= player.Name then
+			coroutine.wrap(ESP)(v)
+		end
+	end
+	
+	-- Add ESP for newly joined players
+	Players.PlayerAdded:Connect(function(newplr)
+		if newplr.Name ~= player.Name then
+			coroutine.wrap(ESP)(newplr)
+		end
+	end)
+	
+	-- Toggle button logic
+	toggleBtn.MouseButton1Click:Connect(function()
+		isOn = not isOn -- Toggle the state
+		On.Visible = isOn
+		Off.Visible = not isOn
+	
+		-- If turning off, clear all ESP objects
+		if not isOn then
+			ClearESP()
+		end
+	end)
+	
+end
+coroutine.wrap(IWRON_fake_script)()
+local function VGXF_fake_script() -- toggleg_Chams.toggleg_ChamsScript 
+	local script = Instance.new('LocalScript', toggleg_Chams)
+
+	
+end
+coroutine.wrap(VGXF_fake_script)()
+local function UGJVQVK_fake_script() -- WaterMark.dragW 
+	local script = Instance.new('LocalScript', WaterMark)
+
+	local UIS = game:GetService("UserInputService")
+	
+	local watermark = script.Parent -- The WaterMark frame
+	local screengui = watermark.Parent -- The parent ScreenGui
+	local dragToggle = false
+	local dragStart = nil
+	local startPos = nil
+	local dragInput = nil
+	
+	local function updateDrag(input)
+		local delta = input.Position - dragStart
+		watermark.Position = UDim2.new(
+			startPos.X.Scale,
+			startPos.X.Offset + delta.X,
+			startPos.Y.Scale,
+			startPos.Y.Offset + delta.Y
+		)
+	end
+	
+	watermark.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 then
+			dragToggle = true
+			dragStart = input.Position
+			startPos = watermark.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	watermark.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement then
+			dragInput = input
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input == dragInput and dragToggle then
+			updateDrag(input)
+		end
+	end)
+	
+end
+coroutine.wrap(UGJVQVK_fake_script)()
