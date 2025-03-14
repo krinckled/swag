@@ -2159,7 +2159,7 @@ local function UNBBHM_fake_script() -- swagUI.auth
 	local WhitelistedUsers = {
 		[7102405327] = true, 
 		[7826679903] = true,
-		[5725082878] = true,6
+		[5725082878] = true,
 		[7973601139] = true,
 		[3676181453] = true,
 		
